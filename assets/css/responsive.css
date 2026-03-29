@@ -1,0 +1,201 @@
+/* ============================================================
+   RESPONSIVE.CSS — Media Queries (Mobile First Approach)
+   Semua breakpoint dikumpulkan di sini agar mudah dikelola
+   ============================================================ */
+
+/* ============================================================
+   NAVBAR — Responsive
+   ============================================================ */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .nav-links {
+    gap: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background: #111;
+    flex-direction: column;
+    width: 60%;
+    padding: 15px;
+    border-left: 2px solid #00a8ff;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: #fff;
+  }
+}
+
+/* ============================================================
+   HERO — Responsive
+   ============================================================ */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 36px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .btn-hero {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* ============================================================
+   ABOUT — Responsive
+   ============================================================ */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content,
+  .about-image {
+    flex: 1 1 100%;
+  }
+
+  .about-image img {
+    max-width: 400px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .about-content h2 {
+    font-size: 26px;
+  }
+
+  .about-content p {
+    font-size: 14px;
+  }
+
+  .btn-about {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* ============================================================
+   SERVICES — Responsive
+   ============================================================ */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+/* ============================================================
+   GALLERY — Responsive
+   ============================================================ */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item img {
+    height: 200px;
+  }
+}
+
+/* ============================================================
+   TESTIMONI — Responsive
+   ============================================================ */
+
+@media (max-width: 768px) {
+  .testimoni-card {
+    padding: 20px;
+  }
+
+  .profile-img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimoni-card {
+    padding: 15px;
+  }
+
+  .testimoni-text {
+    font-size: 14px;
+  }
+}
+
+/* ============================================================
+   FOOTER — Responsive
+   ============================================================ */
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+}
